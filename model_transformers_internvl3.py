@@ -24,7 +24,7 @@ import re
 
 class InternVL_Transformers:
     def __init__(self, llm_name, process_out_list, max_thinking_tokens=4096, max_frames=32,\
-                num_reflection=0, **model_kwargs):
+                num_reflection=0, spatial_zoom_in=False, temporal_zoom_in=False, **model_kwargs):
         """
         Initialize the QwenVL_Transformers model for video-language tasks.
         
@@ -63,6 +63,15 @@ class InternVL_Transformers:
             output_attentions=True
         )
         self.model.language_model.model.layers[-1].self_attn.forward = self.custom_forward
+
+        self.spatial_zoom_in = spatial_zoom_in
+        self.temporal_zoom_in = temporal_zoom_in
+
+        if self.spatial_zoom_in:
+            from transformers import CLIPProcessor, CLIPModel
+            self.clip_model = CLIPModel.from_pretrained("openai/clip-vit-base-patch32")
+            self.clip_model.to(self.model.device)
+            self.clip_processor = CLIPProcessor.from_pretrained("openai/clip-vit-base-patch32")
 
 
     def get_batch_messages(self, video_paths, queries, query_image, duration=1.0):
@@ -347,6 +356,7 @@ class InternVL_Transformers:
         input_ids = model_inputs['input_ids'].to(self.model.device)
         attention_mask = model_inputs['attention_mask'].to(self.model.device)
         generation_config['eos_token_id'] = eos_token_id
+        generation_config['pad_token_id'] = eos_token_id
 
         logits_list = []
         attentions_list = []

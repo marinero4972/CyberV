@@ -35,7 +35,7 @@ Benchmarks:
 
 - [WorldSense](https://huggingface.co/datasets/honglyhly/WorldSense)
 
-You can download the audio transcripts (subtitles) from [huggingface](). The audio transcripts are extracted using [Faster-Whisper-Large-v3](https://github.com/SYSTRAN/faster-whisper).
+You can download the audio transcripts (subtitles) from [huggingface](https://huggingface.co/datasets/marinero4972/CyberV_ASR/tree/main). The audio transcripts are extracted using [Faster-Whisper-Large-v3](https://github.com/SYSTRAN/faster-whisper).
 
 
 ### Model Preparation

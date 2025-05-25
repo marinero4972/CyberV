@@ -192,3 +192,4 @@ zipp==3.21.0
 openpyxl
 xlsxwriter
 pysubs2
+timm

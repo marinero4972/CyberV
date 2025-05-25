@@ -102,6 +102,7 @@ def evaluate_chunk(video_paths, image, text_input, docs, gpu_id, args, queue):
                     pred_list.append(process_out_list([output2[0]["text"]],batch_doc[0])[0])
                     output_list.append(output2)
 
+                # There are some signals in the output_list monitored by the Sensor.
                 #### Sensor and Controller ####
                 output = select_output(output_list, pred_list, text=inputs[0]["text"], select_method=args.score_policy,\
                                 max_frames=args.max_frames, fps=model_bon.fps_list[0], n=N, theta=args.theta)   # majority_sampling, adaptive_with_score_v2
