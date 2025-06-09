@@ -9,6 +9,8 @@
   <img src="figs/teaser.png" width="700">
 </div>
 
+<h3 align="center"> Performance on VideoMMMU Benchmark.</h3>
+
 ## 📖 Abstract
 
 In this work, we present **CyberV**, a cybernetic system consisting of **an MLLM Inference System, a Sensor and a Controller**. Specifically, the sensor monitors forward processes of the MLLM and collects intermediate interpretations, such as attention drift, then the controller determines when and how to trigger self-correction and generate feedback to guide the next round. This test-time adaptive scaling framework enhances frozen MLLMs without requiring retraining or additional components. Experiments demonstrate significant improvements: CyberV boosts Qwen2.5-VL-7B by 8.3\% and InternVL3-8B by 5.5\% on VideoMMMU, **surpassing the competitive proprietary model GPT-4o**. When applied to Qwen2.5-VL-72B, it yields a 10.0\% improvement, achieving performance even **comparable to human experts**. Furthermore, our method shows consistent gains on general-purpose benchmarks like VideoMME and WorldSense, highlighting its effectiveness and generalization capability in making MLLM more robust and accurate for dynamic video understanding.
