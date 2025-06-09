@@ -9,7 +9,7 @@
   <img src="figs/teaser.png" width="700">
 </div>
 
-<h3 align="center"> Performance on VideoMMMU Benchmark.</h3>
+<div align="center"> Performance on VideoMMMU Benchmark.</div>
 
 ## 📖 Abstract
 
