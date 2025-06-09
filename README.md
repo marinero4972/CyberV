@@ -2,6 +2,9 @@
 <p align="center">
   <h1 align="center">CyberV: Cybernetics for Test-time Scaling  <br> in Video Understanding</h1>
 
+
+<h3 align="center"> Jiahao Meng, Shuyang Sun, Yue Tan, Lu Qi, Yunhai Tong, Xiangtai Li, Longyin Wen </h3>
+
 <div align="center">
   <img src="figs/teaser.png" width="700">
 </div>
