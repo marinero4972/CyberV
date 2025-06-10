@@ -5,6 +5,9 @@
 
 <h3 align="center"> Jiahao Meng, Shuyang Sun, Yue Tan, Lu Qi, Yunhai Tong, Xiangtai Li, Longyin Wen </h3>
 
+[![arXiv](https://img.shields.io/badge/arXiv-2410.08261-b31b1b.svg)](https://arxiv.org/abs/2506.07971)
+[![Video](https://img.shields.io/badge/YouTube-Video-FF0000?logo=youtube)](https://www.youtube.com/watch?v=OxelhjjP01c)
+
 <div align="center">
   <img src="figs/teaser.png" width="700">
 </div>
