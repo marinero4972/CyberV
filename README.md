@@ -6,8 +6,8 @@
 <h3 align="center"> Jiahao Meng, Shuyang Sun, Yue Tan, Lu Qi, Yunhai Tong, Xiangtai Li, Longyin Wen </h3>
 
 <div align="center">
-[![arXiv](https://img.shields.io/badge/arXiv-2410.08261-b31b1b.svg)](https://arxiv.org/abs/2506.07971)
-[![Video](https://img.shields.io/badge/YouTube-Video-FF0000?logo=youtube)](https://www.youtube.com/watch?v=OxelhjjP01c)
+  <a href="https://arxiv.org/abs/2506.07971"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-2410.08261-b31b1b.svg"></a>
+  <a href="https://www.youtube.com/watch?v=OxelhjjP01c"><img alt="Video" src="https://img.shields.io/badge/YouTube-Video-FF0000?logo=youtube"></a>
 </div>
 
 <div align="center">
